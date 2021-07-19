@@ -1,2 +1,2 @@
 # rsschool-cv
-CV
+https://github.com/Maslovars/rsschool-cv/cv
