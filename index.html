@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My CV">
+    <title>CV</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header container">
+        <p>CV for RSS</p>
+    </header>
+    <main>
+        <div class="container">
+            <section class="info">
+                <div>
+                    <img src="images/avatar.jpeg" alt="avatar" />
+                </div>
+                <div class="fio">
+                    <h1>Arseny Maslov</h1>
+                    <div>Front-end developer</div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="left">
+                    <section class="contacts">
+                        <h2>Contacts:</h2>
+                        <ul>
+                            <li>Discord: ArsenyMaslov#2013</li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/arseniy-maslov/">Click</a></li>
+                            <li>Email: <a href="mailto:maslovars@gmail.com">maslovars@gmail.com</a></li>
+                        </ul>
+                    </section>
+                    <section class="skills">
+                        <h2>Skills:</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>CSS/SASS</li>
+                            <li>HTML</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Figma</li>
+                            <li>Ubuntu</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right">
+                    <section class="aboutMe">
+                        <h2>About me:</h2>
+                        <p>I love computers technology since childhood.
+                            I enjoy learning new technologies, writing code and having fun with the working version of
+                            my
+                            project. I quickly learn new things, work well in a team, always finish what I started.</p>
+                    </section>
+                    <section class="education">
+                        <h2>Education and experience</h2>
+                        <ul>
+                            <li>BSEU Bachelor's degree - Economic informatics (2010-2015)</li>
+                            <li>WildCodeSchool - Front-end web development (2020-2021)</li>
+                            <li>Twillio hackathon on social and environmental issues (March 2021)</li>
+                        </ul>
+                    </section>
+                    <section class="code">
+                        <h2>Code example:</h2>
+                        <code>
+                            const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
+                                if (address == Number || address == '' || lat == null) {
+                                  setWarning(!warning)
+                                } else {
+                                  fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=b2d2d94ac963070d2157287802797e13`)
+                                    .then(data => data.json())
+                                    .then(info => setAirInfo(info))
+                                  setMap(true)
+                                  setAddress('')
+                                }
+                              }
+                        </code>
+                    </section>
+                    <section class="english">
+                        <h2>English level:</h2>
+                        <p>B1</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer container">
+        <div class="links">
+            <a href="https://rs.school/js/"><img src="./images/rs_school_js.svg" alt="rss"></a>
+            <a href="https://github.com/Maslovars"><img src="./images/github.png" alt="github"></a>
+        </div>
+        <p>2021</p>
+    </footer>
+</body>
+
+</html>
