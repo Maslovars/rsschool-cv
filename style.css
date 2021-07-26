@@ -17,4 +17,107 @@ body {
 .header {
     display: flex;        
     justify-content: center;
+    font-size: 60px;
 }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.info img {
+  width: 320px;
+}
+
+.fio {
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 200px;
+}
+
+.fio h1{
+  font-size: 64px;
+}
+
+.fio div{
+  font-size: 48px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 25%;
+  background-color: rgb(76, 137, 206);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  font-size: 20px;
+}
+
+.left h2{
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+.left li{
+  padding: 5px 0;  
+}
+
+.contacts li {
+  list-style: none;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
+.right {
+  width: 67%;
+  font-size: 20px;
+}
+
+.right h2{  
+  font-size: 40px;
+}
+
+.education li {
+  padding: 5px 0;
+}
+
+.code {
+  font-size: 15px;
+}
+
+.english p {
+  font-size: 35px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+}
+
+.links img {
+  padding: 25px 150px;
+  width: 100px;
+}
+
+.links img:hover {      
+  transform: scale(1.2);
+}
+
+.links p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+
+
