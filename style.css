@@ -16,8 +16,11 @@ body {
 
 .header {
     display: flex;        
-    justify-content: center;
-    font-size: 60px;
+    justify-content: center;    
+}
+
+.header h1 {
+  font-size: 60px;
 }
 
 .info {
@@ -38,7 +41,7 @@ body {
   padding-right: 200px;
 }
 
-.fio h1{
+.fio h2{
   font-size: 64px;
 }
 
