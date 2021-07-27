@@ -13,7 +13,9 @@
 
 <body>
     <header class="header container">
-        <p>CV for RSS</p>
+        <article>
+            <p>CV for RSS</p>
+        </article>
     </header>
     <main>
         <div class="container">
@@ -61,7 +63,7 @@
                             project. I quickly learn new things, work well in a team, always finish what I started.</p>
                     </section>
                     <section class="education">
-                        <h2>Education and experience</h2>
+                        <h2>Education and experience:</h2>
                         <ul>
                             <li>BSEU Bachelor's degree - Economic informatics (2010-2015)</li>
                             <li>WildCodeSchool - Front-end web development (2020-2021)</li>
@@ -71,17 +73,19 @@
                     <section class="code">
                         <h2>Code example:</h2>
                         <code>
-                            const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
-                                if (address == Number || address == '' || lat == null) {
-                                  setWarning(!warning)
-                                } else {
-                                  fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=b2d2d94ac963070d2157287802797e13`)
-                                    .then(data => data.json())
-                                    .then(info => setAirInfo(info))
-                                  setMap(true)
-                                  setAddress('')
-                                }
-                              }
+                            <pre>
+const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
+    if (address == Number || address == '' || lat == null) {
+        setWarning(!warning)
+        } else {
+        fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=b2d2d94ac963070d2157287802797e13`)
+            .then(data => data.json())
+            .then(info => setAirInfo(info))
+          setMap(true)
+          setAddress('')
+                }
+            }
+                            </pre>  
                         </code>
                     </section>
                     <section class="english">
