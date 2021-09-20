@@ -9,23 +9,44 @@
     <title>CV</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
-    <header class="header container">
-        <article>
-            <h1>CV for RSS</h1>
-        </article>
+    <header class="header">
+        <nav class="navigation container">
+            <div class="navigation__logo">
+                <a class="navigation__link menu__item" href="index.html">
+                    <h1>CV for RSS</h1>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" onclick="fun1()" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="navigation__links menu__box">
+                    <li><a class="navigation__link navigation__link__active menu__item" href="index.html">About me</a>
+                    </li>
+                    <li><a class="navigation__link menu__item" href="skills.html">Education and skills</a></li>
+                    <li><a class="navigation__link menu__item" href="projects.html">My projects</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container">
             <section class="info">
-                <div>
+                <div class="ava">
                     <img src="images/avatar.jpeg" alt="avatar" />
                 </div>
                 <div class="fio">
                     <h2>Arseny Maslov</h2>
-                    <div>Front-end developer</div>
+                    <h3>Front-end developer</h3>
                 </div>
             </section>
             <div class="content">
@@ -38,43 +59,24 @@
                             <li>Email: <a href="mailto:maslovars@gmail.com">maslovars@gmail.com</a></li>
                         </ul>
                     </section>
-                    <section class="skills">
-                        <h2>Skills:</h2>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>CSS/SASS</li>
-                            <li>HTML</li>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Figma</li>
-                            <li>Ubuntu</li>
-                            <li>Firebase</li>
-                        </ul>
-                    </section>
                 </div>
                 <div class="right">
                     <section class="aboutMe">
-                        <h2>About me:</h2>
-                        <p>I love computers technology since childhood.
-                            I enjoy learning new technologies, writing code and having fun with the working version of
-                            my
-                            project. I quickly learn new things, work well in a team, always finish what I started.</p>
-                    </section>
-                    <section class="education">
-                        <h2>Education and experience:</h2>
-                        <ul>
-                            <li>BSEU Bachelor's degree - Economic informatics (2010-2015)</li>
-                            <li>WildCodeSchool - Front-end web development (2020-2021)</li>
-                            <li>Twillio hackathon on social and environmental issues (March 2021)</li>
-                        </ul>
+                        <article>
+                            <h2>About me:</h2>
+                            <p>I love computers technology since childhood.
+                                I enjoy learning new technologies, writing code and having fun with the working version
+                                of
+                                my
+                                project. I quickly learn new things, work well in a team, always finish what I started.
+                            </p>
+                        </article>
                     </section>
                     <section class="code">
-                        <h2>Code example:</h2>
+                        <h2>Code example with highlight:</h2>
                         <pre>
-                            <code>
-const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
+                            <code class="code">
+  const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
     if (address == Number || address == '' || lat == null) {
         setWarning(!warning)
         } else {
@@ -88,10 +90,6 @@ const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
             }
         </code>
             </pre>
-                    </section>
-                    <section class="english">
-                        <h2>English level:</h2>
-                        <p>B1</p>
                     </section>
                 </div>
             </div>
