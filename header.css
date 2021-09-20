@@ -70,7 +70,7 @@
 }
 
 @media (max-width: 1023px) {
-    .header h1 {
+    .header h2 {
         display: none;
       }
   }
@@ -82,7 +82,7 @@
     }
   }  
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
