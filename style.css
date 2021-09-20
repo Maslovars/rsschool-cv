@@ -95,6 +95,7 @@ p {
 .left {
   width: 25%;
   min-width: 290px;
+  box-sizing: border-box;
   background-color: #7db6f7;
   color: white;
   display: flex;
@@ -202,7 +203,7 @@ p {
 }
 
 .links {
-  width: 100%;
+  width: 90%;
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -227,6 +228,18 @@ p {
 
 @media (max-width: 1100px) {
   .info {
+    justify-content: center;
+    align-items: center; 
+  }
+  .education {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .english {    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
   }
