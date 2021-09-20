@@ -9,8 +9,7 @@ body {
   height: 100%;
   min-width: 100%;
   margin: 0;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 14px;  
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
   }
@@ -58,6 +57,7 @@ p {
 .info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
@@ -74,30 +74,34 @@ p {
   align-items:center;
   flex-direction: column;
   justify-content: center;
-  padding-right: 200px;
+  padding-right: 15%;
 }
 
-.fio h2{
+.fio h2{  
   font-size: 64px;
 }
 
-.fio h3{
+.fio h3{  
   font-size: 48px;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .left {
   width: 25%;
+  min-width: 290px;
   background-color: #7db6f7;
   color: white;
   display: flex;
   flex-direction: column;
   align-items:flex-start;
   font-size: 20px;
+  padding: 20px;
 }
 
 .left h2{
@@ -120,8 +124,7 @@ p {
 
 .contacts li a {
   text-decoration: none;  
-  line-height: 1.2;
-  text-transform: uppercase;
+  line-height: 1.2;  
   color: #fff;  
 }
 
@@ -139,8 +142,16 @@ p {
   font-size: 40px;
 }
 
+.education {
+  padding-top: 20px;
+}
+
 .education li {
   padding: 5px 0;
+}
+
+.skills {
+  padding-top: 20px;
 }
 
 .code {
@@ -214,4 +225,19 @@ p {
 }
 
 
-
+@media (max-width: 1100px) {
+  .info {
+    justify-content: center;
+    align-items: center; 
+  }
+  .right {
+    width: 100%;   
+    justify-content: center;
+    align-items: center; 
+  }
+  .left {
+    width: 100%;    
+    justify-content: center;
+    align-items: center; 
+  }
+}
