@@ -4,7 +4,7 @@
     background-color: #7db6f7;
 }
 
-.header h1 {
+.header h2 {
     font-size: 40px;
     margin: 0;
   }
@@ -74,6 +74,13 @@
         display: none;
       }
   }
+
+@media (max-width: 767px) { 
+    .container {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }  
 
 @media (max-width: 600px) {
 
