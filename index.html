@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My CV">
+    <title>CV</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="visually-hidden">CV for RSS</h1>
+        <nav class="navigation container">
+            <div class="navigation__logo">
+                <a class="navigation__link menu__item" href="index.html">
+                    <article>
+                        <h2>CV for RSS</h2>
+                    </article>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="navigation__links menu__box">
+                    <li><a class="navigation__link navigation__link__active menu__item" href="index.html">About me</a>
+                    </li>
+                    <li><a class="navigation__link menu__item" href="skills.html">Education and skills</a></li>
+                    <li><a class="navigation__link menu__item" href="projects.html">My projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="info">
+                <div class="ava">
+                    <img src="images/avatar.jpeg" alt="avatar">
+                </div>
+                <div class="fio">
+                    <h2>Arseny Maslov</h2>
+                    <h3>Front-end developer</h3>
+                </div>
+            </section>
+            <div class="content">
+                <div class="left">
+                    <section class="contacts">
+                        <h2>Contacts:</h2>
+                        <ul>
+                            <li>Discord: ArsenyMaslov#2013</li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/arseniy-maslov/">Click</a></li>
+                            <li>Email: <a href="mailto:maslovars@gmail.com">maslovars@gmail.com</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right">
+                    <section class="aboutMe">
+                        <h2>About me:</h2>
+                        <p>I love computers technology since childhood.
+                            I enjoy learning new technologies, writing code and having fun with the working version
+                            of
+                            my
+                            project. I quickly learn new things, work well in a team, always finish what I started.
+                        </p>
+
+                    </section>
+                    <section class="code">
+                        <h2>Code example with highlight:</h2>
+                        <pre>
+                            <code class="code">
+  const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
+    if (address == Number || address == '' || lat == null) {
+        setWarning(!warning)
+        } else {
+        fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}
+        &appid=b2d2d94ac963070d2157287802797e13`)
+            .then(data => data.json())
+            .then(info => setAirInfo(info))
+          setMap(true)
+          setAddress('')
+                }
+            }
+        </code>
+            </pre>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="links container">
+            <a href="https://rs.school/js-en/" target="_blank"><img src="./images/rs_school_js.svg" alt="rss"></a>
+            <a href="https://github.com/Maslovars" target="_blank"><img src="./images/github.png" alt="github"></a>
+        </div>
+        <h5>2023</h5>
+    </footer>
+</body>
+
+</html>
