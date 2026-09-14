@@ -44,7 +44,9 @@
     <main>
         <div class="container">
             <section class="info">
-                <div>avatar</div>
+                <div class="ava">
+                    <img src="images/avatar.jpeg" alt="avatar">
+                </div>
                 <div class="fio">
                     <h2>Arseny Maslov</h2>
                     <h3>Front-end developer</h3>
@@ -73,19 +75,34 @@
 
                     </section>
                     <section class="code">
-                        <h2>Code example:</h2>
-                        <code>123</code>
-                    </section>
-                    <section class="english">
-                        <h2>English level:</h2>
-                        <p>B1</p>
+                        <h2>Code example with highlight:</h2>
+                        <pre>
+                            <code class="code">
+  const getAirInfo = (lat = coords.lat, lng = coords.lng) => {
+    if (address == Number || address == '' || lat == null) {
+        setWarning(!warning)
+        } else {
+        fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}
+        &appid=b2d2d94ac963070d2157287802797e13`)
+            .then(data => data.json())
+            .then(info => setAirInfo(info))
+          setMap(true)
+          setAddress('')
+                }
+            }
+        </code>
+            </pre>
                     </section>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer container">
-        <div class="links">links</div>
+    <footer class="footer">
+        <div class="links container">
+            <a href="https://rs.school/courses/javascript" target="_blank"><img src="./images/rs_school_js.svg"
+                    alt="rss"></a>
+            <a href="https://github.com/Maslovars" target="_blank"><img src="./images/github.png" alt="github"></a>
+        </div>
         <p>2026</p>
     </footer>
 </body>
